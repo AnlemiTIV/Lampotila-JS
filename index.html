@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
+    
+    <div>
+        <form id="dropDown">
+            <select name="muunnin" id="selection" style="background-color: white;">
+                <option id="ToFahrenheit"selected>Fahrenheit -> Celcius</option>
+                <option id="ToCelcius">Celcius -> Fahrenheit</option>
+            </select>
+            <br><br>
+        <form>
+            
+        <form id="painikeForm">
+            <label for="kentta">Syötä Lämpötila:</label><br>
+            <input type="text" id="annettuArvo">
+            <button type="button" id="painike" style="padding: 2px 10px 2px 10px;" onclick="onChanger()">Muunna</button><br>
+        </form> <!--onChange is rather atm, aimed at the select element form-->
+        
+        <form name = "decimaali" id="decimalPoimi">
+            <input type="radio" id="oneDecimal" name="decimaali">
+            <label for="oneDecimal">1 desimaali</label><br>
+            <input type="radio" id="twoDecimal" name="decimaali">
+            <label for="twoDecimal">2 desimaali</label><br>
+            <input type="radio" id="threeDecimal" name="decimaali">
+            <label for="threeDecimal">3 desimaali</label><br>
+        </form>
+    </div>
+
+    <div>
+
+        <p id="demo"></p>
+
+    </div>
+
+
+    <script src="JS/funktiot.js"></script>    
+</body>
+</html>
